@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbor View Café — Ormond Beach, FL | Unforgettable Dining Experience</title>
+    <meta name="description" content="Harbor View Café offers an unforgettable dining experience in Ormond Beach with fresh, locally-sourced ingredients and coastal atmosphere." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav" role="navigation" aria-label="Primary">
+        <div class="brand">Harbor View Café</div>
+        <nav class="nav-links">
+          <a href="#about">About us</a>
+          <a href="#menu">Menus</a>
+          <a href="#events">Events</a>
+          <a href="#gallery">Gallery</a>
+        </nav>
+        <a class="book-btn" href="#booking">Book Now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="wrap">
+            <h1 class="hero-title">Unforgettable<br>Dining Experience</h1>
+            <p class="hero-subtitle">We blend exquisite flavors with a charming ambiance to create a dining experience<br>like no other. Indulge in a culinary journey that stimulates your senses</p>
+            
+            <div class="food-showcase">
+              <div class="food-item">
+                <img src="assets/avocado-toast.jpg" alt="Gourmet avocado toast with poached egg" loading="lazy" />
+              </div>
+              <div class="food-item">
+                <img src="assets/pancakes-blueberry.jpg" alt="Stack of blueberry pancakes" loading="lazy" />
+              </div>
+              <div class="food-item">
+                <img src="assets/full-breakfast.jpg" alt="Complete breakfast plate" loading="lazy" />
+              </div>
+              <div class="food-item">
+                <img src="assets/latte-art.jpg" alt="Artisan coffee with latte art" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking" id="booking">
+        <div class="wrap">
+          <div class="booking-form">
+            <form class="reservation-form" onsubmit="location.href='mailto:owner@example.com?subject=Table Reservation Request'; return false;">
+              <div class="form-row">
+                <div class="form-group">
+                  <select required aria-label="Number of people">
+                    <option value="">2 People</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5 People</option>
+                    <option value="6">6 People</option>
+                    <option value="7">7 People</option>
+                    <option value="8">8+ People</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="date" required aria-label="Reservation date" />
+                </div>
+                <div class="form-group">
+                  <select required aria-label="Reservation time">
+                    <option value="">10:00 AM</option>
+                    <option value="8:00">8:00 AM</option>
+                    <option value="8:30">8:30 AM</option>
+                    <option value="9:00">9:00 AM</option>
+                    <option value="9:30">9:30 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="10:30">10:30 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="1:00">1:00 PM</option>
+                    <option value="1:30">1:30 PM</option>
+                    <option value="2:00">2:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="book-table-btn">Book a table</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="restaurant-showcase" id="gallery">
+        <div class="wrap">
+          <div class="showcase-content">
+            <div class="showcase-image">
+              <img src="assets/cafe-interior.jpg" alt="Cozy restaurant interior" loading="lazy" />
+              <div class="rating-badge">
+                <div class="rating-score">4.7</div>
+                <div class="rating-text">Client Reviews</div>
+                <div class="rating-icons">
+                  <span class="rating-icon">👥</span>
+                  <span class="rating-icon">⭐</span>
+                  <span class="rating-icon">❤️</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase-text">
+              <h2>Where Every Meal is an<br>Unforgettable Experience</h2>
+              <p>From our carefully curated ambiance to our expertly crafted dishes, every detail is designed to create lasting memories. Whether you're enjoying a leisurely brunch or celebrating a special occasion, our dedicated team ensures your dining experience exceeds expectations.</p>
+              <div class="contact-info">
+                <div class="contact-item">
+                  <strong>Hours:</strong> Mon-Fri 7:00 AM - 3:00 PM • Sat-Sun 8:00 AM - 4:00 PM
+                </div>
+                <div class="contact-item">
+                  <strong>Location:</strong> 456 Ocean Boulevard, Ormond Beach, FL 32174
+                </div>
+                <div class="contact-item">
+                  <strong>Phone:</strong> <a href="tel:+1-386-555-0123">(386) 555-0123</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="wrap">
+          <div class="menu-content">
+            <h2>Our Menu</h2>
+            <p>Explore our carefully crafted selection of breakfast favorites, artisan coffee, and seasonal specialties made with locally-sourced ingredients.</p>
+            
+            <div class="menu-categories">
+              <div class="menu-category">
+                <h3>Breakfast & Brunch</h3>
+                <p>Classic favorites and creative twists on morning essentials</p>
+              </div>
+              <div class="menu-category">
+                <h3>Artisan Coffee</h3>
+                <p>House-roasted beans and expertly crafted espresso drinks</p>
+              </div>
+              <div class="menu-category">
+                <h3>Fresh Pastries</h3>
+                <p>Daily baked goods and seasonal treats</p>
+              </div>
+            </div>
+
+            <div class="menu-download">
+              <a href="#" class="menu-pdf-btn" onclick="alert('PDF menu would be available here'); return false;">
+                <span class="pdf-icon">📄</span>
+                View Full Menu (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrap">
+          <div class="about-content">
+            <h2>About Harbor View Café</h2>
+            <p>Located in the heart of Ormond Beach, Harbor View Café has been serving exceptional breakfast and brunch since 2018. We're passionate about creating memorable dining experiences through fresh, locally-sourced ingredients and warm hospitality.</p>
+            <p>Whether you're starting your day with our signature avocado toast or enjoying weekend brunch with friends, we're committed to making every visit special.</p>
+            
+            <div class="cta">
+              <a class="btn" href="tel:+1-386-555-0123">Call (386) 555‑0123</a>
+              <a class="btn btn--ghost" href="mailto:owner@example.com?subject=General%20Inquiry">Email Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="events" id="events">
+        <div class="wrap">
+          <h2>Private Events & Catering</h2>
+          <p>Make your special occasions unforgettable with our catering services and private event space.</p>
+          
+          <div class="event-grid">
+            <div class="event-card">
+              <h3>Corporate Breakfast</h3>
+              <p>Start your business meetings with fresh coffee and breakfast catering.</p>
+            </div>
+            <div class="event-card">
+              <h3>Private Parties</h3>
+              <p>Celebrate birthdays, anniversaries, and special occasions with us.</p>
+            </div>
+            <div class="event-card">
+              <h3>Weekend Brunch</h3>
+              <p>Reserve our space for group brunches and family gatherings.</p>
+            </div>
+          </div>
+          
+          <div class="cta">
+            <a class="btn" href="mailto:owner@example.com?subject=Event%20Inquiry">Inquire About Events</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Harbor View Café</h3>
+            <p>456 Ocean Boulevard<br>Ormond Beach, FL 32174</p>
+            <p><a href="tel:+1-386-555-0123">(386) 555‑0123</a></p>
+          </div>
+          <div class="footer-hours">
+            <h4>Hours</h4>
+            <p>Monday - Friday: 7:00 AM - 3:00 PM<br>
+               Saturday - Sunday: 8:00 AM - 4:00 PM</p>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#booking">Reservations</a>
+            <a href="#menu">Menu</a>
+            <a href="#events">Private Events</a>
+            <a href="mailto:owner@example.com">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Harbor View Café — Ormond Beach, FL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Set default date to tomorrow
+      document.addEventListener('DOMContentLoaded', function() {
+        const dateInput = document.querySelector('input[type="date"]');
+        if (dateInput) {
+          const tomorrow = new Date();
+          tomorrow.setDate(tomorrow.getDate() + 1);
+          dateInput.value = tomorrow.toISOString().split('T')[0];
+        }
+      });
+    </script>
+  </body>
+</html>

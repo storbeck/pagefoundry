@@ -1,0 +1,29 @@
+NAIL SALON IMAGE DOWNLOAD CHECKLIST
+=====================================
+
+Directory: /examples/nail-salon/assets/
+
+Required Images (8 total):
+
+[ ] hero-salon-interior.jpg     - Elegant nail salon interior (hero image)
+[ ] manicure-service.jpg        - Hands with professional nail treatment
+[ ] pedicure-spa.jpg           - Feet in spa setting/pedicure treatment
+[ ] nail-art-designs.jpg       - Creative nail art examples/designs
+[ ] salon-tools.jpg            - Professional nail salon tools/equipment
+[ ] spa-atmosphere.jpg         - Relaxing spa atmosphere with candles
+[ ] staff-working.jpg          - Nail technician/staff working
+[ ] beautiful-nails-result.jpg - Final result shots of beautiful nails
+
+QUICK DOWNLOAD SITES:
+- Unsplash.com (no signup required)
+- Pexels.com (free account recommended)
+- Pixabay.com (free account required)
+
+REQUIREMENTS FOR EACH IMAGE:
+✓ Minimum 1200x800px resolution
+✓ JPEG format preferred
+✓ Free for commercial use
+✓ Professional, clean, elegant style
+✓ High quality composition and lighting
+
+Search each site with the terms provided in IMAGE_DOWNLOAD_GUIDE.md

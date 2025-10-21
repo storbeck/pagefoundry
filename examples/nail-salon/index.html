@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Serenity Nails & Spa — Ormond Beach, FL | Premium Nail Care & Wellness</title>
+    <meta name="description" content="Serenity Nails & Spa offers premium nail care, manicures, pedicures, and relaxing spa treatments in Ormond Beach. Book your appointment today." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap nav" role="navigation" aria-label="Primary">
+        <div class="brand">Serenity Nails & Spa</div>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#hours">Hours</a>
+        </nav>
+        <a class="book-btn" href="#booking">Book Appointment</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="wrap">
+            <h1 class="hero-title">Elevate Your<br>Natural Beauty</h1>
+            <p class="hero-subtitle">Experience luxury nail care and wellness treatments in our tranquil<br>Ormond Beach salon. Your journey to beautiful nails starts here.</p>
+            
+            <div class="hero-actions">
+              <a href="#booking" class="btn btn-primary">Book Now</a>
+              <a href="#services" class="btn btn-ghost">View Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking" id="booking">
+        <div class="wrap">
+          <div class="booking-content">
+            <h2>Schedule Your Visit</h2>
+            <p>Choose your preferred service and time. We'll confirm your appointment within 2 hours.</p>
+            
+            <form class="appointment-form" onsubmit="location.href='mailto:owner@example.com?subject=Nail Salon Appointment Request'; return false;">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service</label>
+                  <select id="service" required aria-label="Select service">
+                    <option value="">Select Service</option>
+                    <option value="manicure">Classic Manicure</option>
+                    <option value="gel-manicure">Gel Manicure</option>
+                    <option value="pedicure">Classic Pedicure</option>
+                    <option value="gel-pedicure">Gel Pedicure</option>
+                    <option value="full-set">Full Set (Acrylic)</option>
+                    <option value="fill-in">Fill-in</option>
+                    <option value="nail-art">Nail Art Design</option>
+                    <option value="spa-package">Spa Package</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="appointment-date">Date</label>
+                  <input type="date" id="appointment-date" required aria-label="Appointment date" />
+                </div>
+                <div class="form-group">
+                  <label for="appointment-time">Time</label>
+                  <select id="appointment-time" required aria-label="Appointment time">
+                    <option value="">Select Time</option>
+                    <option value="9:00">9:00 AM</option>
+                    <option value="9:30">9:30 AM</option>
+                    <option value="10:00">10:00 AM</option>
+                    <option value="10:30">10:30 AM</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="1:00">1:00 PM</option>
+                    <option value="1:30">1:30 PM</option>
+                    <option value="2:00">2:00 PM</option>
+                    <option value="2:30">2:30 PM</option>
+                    <option value="3:00">3:00 PM</option>
+                    <option value="3:30">3:30 PM</option>
+                    <option value="4:00">4:00 PM</option>
+                    <option value="4:30">4:30 PM</option>
+                    <option value="5:00">5:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group form-group--full">
+                  <label for="client-name">Your Name</label>
+                  <input type="text" id="client-name" required aria-label="Your name" placeholder="Enter your full name" />
+                </div>
+                <div class="form-group form-group--full">
+                  <label for="client-phone">Phone Number</label>
+                  <input type="tel" id="client-phone" required aria-label="Your phone number" placeholder="(386) 555-0123" />
+                </div>
+              </div>
+              <button type="submit" class="appointment-btn">Request Appointment</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="wrap">
+          <h2>Our Services</h2>
+          <p class="services-intro">From classic manicures to luxurious spa treatments, we offer comprehensive nail care and wellness services.</p>
+          
+          <div class="services-grid">
+            <div class="service-category">
+              <div class="service-image">
+                <img src="assets/applying_maroon_nails.jpg" alt="Professional manicure service" loading="lazy" />
+              </div>
+              <div class="service-content">
+                <h3>Manicures</h3>
+                <div class="service-list">
+                  <div class="service-item">
+                    <span class="service-name">Classic Manicure</span>
+                    <span class="service-price">$25</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Gel Manicure</span>
+                    <span class="service-price">$35</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">French Manicure</span>
+                    <span class="service-price">$30</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Shellac Manicure</span>
+                    <span class="service-price">$40</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-category">
+              <div class="service-image">
+                <img src="assets/spa_chairs.jpg" alt="Relaxing pedicure treatment" loading="lazy" />
+              </div>
+              <div class="service-content">
+                <h3>Pedicures</h3>
+                <div class="service-list">
+                  <div class="service-item">
+                    <span class="service-name">Classic Pedicure</span>
+                    <span class="service-price">$35</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Gel Pedicure</span>
+                    <span class="service-price">$45</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Spa Pedicure</span>
+                    <span class="service-price">$50</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Deluxe Pedicure</span>
+                    <span class="service-price">$65</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-category">
+              <div class="service-image">
+                <img src="assets/nail_showcase_book.jpg" alt="Creative nail art designs" loading="lazy" />
+              </div>
+              <div class="service-content">
+                <h3>Nail Enhancements</h3>
+                <div class="service-list">
+                  <div class="service-item">
+                    <span class="service-name">Full Set (Acrylic)</span>
+                    <span class="service-price">$50</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Fill-in</span>
+                    <span class="service-price">$30</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Nail Art (per nail)</span>
+                    <span class="service-price">$5</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Nail Repair</span>
+                    <span class="service-price">$8</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-category">
+              <div class="service-image">
+                <img src="assets/nail_polish_wall.jpg" alt="Professional nail polish collection" loading="lazy" />
+              </div>
+              <div class="service-content">
+                <h3>Additional Services</h3>
+                <div class="service-list">
+                  <div class="service-item">
+                    <span class="service-name">Paraffin Treatment</span>
+                    <span class="service-price">$15</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Callus Removal</span>
+                    <span class="service-price">$10</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Hand Massage</span>
+                    <span class="service-price">$20</span>
+                  </div>
+                  <div class="service-item">
+                    <span class="service-name">Eyebrow Waxing</span>
+                    <span class="service-price">$15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="wrap">
+          <h2>Our Work</h2>
+          <p>Browse our gallery of beautiful nail art and treatments.</p>
+          
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img src="assets/baby_blue_nails.jpg" alt="Beautiful baby blue manicure" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/copper_nails.jpg" alt="Elegant copper nail design" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/pink_nails.jpg" alt="Perfect pink manicure" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/nude_nails_3.jpg" alt="Classic nude nail polish" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/green_nails_grabbing_flowers.jpg" alt="Green nails with flowers" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/fall_season_nail_colors.jpg" alt="Fall season nail colors" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/colorful_color_splashes_on_nails.jpg" alt="Colorful nail art design" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/white_nails.jpg" alt="Clean white manicure" loading="lazy" />
+            </div>
+            <div class="gallery-item">
+              <img src="assets/red_nail_polish_with_leaf.jpg" alt="Red nail polish with leaf accent" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="wrap">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>About Serenity Nails & Spa</h2>
+              <p>For over 8 years, Serenity Nails & Spa has been Ormond Beach's premier destination for luxury nail care and wellness. We believe in creating a tranquil escape where you can relax, rejuvenate, and emerge feeling beautiful inside and out.</p>
+              <p>Our skilled technicians use only the highest quality products and maintain the strictest sanitation standards. Every tool is sterilized, and we use disposable liners for all pedicure services to ensure your safety and comfort.</p>
+              
+              <div class="about-features">
+                <div class="feature">
+                  <div class="feature-icon">✨</div>
+                  <div class="feature-text">
+                    <h4>Premium Products</h4>
+                    <p>We use only top-quality polishes and treatment products</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon">🧼</div>
+                  <div class="feature-text">
+                    <h4>Highest Sanitation</h4>
+                    <p>All tools are sterilized and safety is our top priority</p>
+                  </div>
+                </div>
+                <div class="feature">
+                  <div class="feature-icon">💅</div>
+                  <div class="feature-text">
+                    <h4>Expert Technicians</h4>
+                    <p>Skilled professionals with years of experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about-image">
+              <img src="assets/inside_salon_wall.jpg" alt="Serenity Nails & Spa interior" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hours" id="hours">
+        <div class="wrap">
+          <h2>Visit Us</h2>
+          <div class="location-content">
+            <div class="location-info">
+              <div class="info-block">
+                <h3>Hours</h3>
+                <div class="hours-grid">
+                  <div class="hours-row">
+                    <span class="day">Monday - Friday</span>
+                    <span class="time">9:30 AM - 7:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span class="day">Saturday</span>
+                    <span class="time">9:30 AM - 6:00 PM</span>
+                  </div>
+                  <div class="hours-row">
+                    <span class="day">Sunday</span>
+                    <span class="time">11:00 AM - 5:00 PM</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="info-block">
+                <h3>Location</h3>
+                <p class="address">
+                  567 Ocean Shore Boulevard<br>
+                  Ormond Beach, FL 32174
+                </p>
+                <a href="https://www.openstreetmap.org/?mlat=29.2858&mlon=-81.0559#map=16/29.2858/-81.0559" class="map-link" target="_blank" rel="noopener">
+                  Get Directions
+                </a>
+              </div>
+              
+              <div class="info-block">
+                <h3>Contact</h3>
+                <p class="contact-item">
+                  <strong>Phone:</strong> <a href="tel:+1-386-555-0123">(386) 555-0123</a>
+                </p>
+                <p class="contact-item">
+                  <strong>Email:</strong> <a href="mailto:owner@example.com">hello@serenitynails.com</a>
+                </p>
+              </div>
+            </div>
+            
+            <div class="salon-showcase">
+              <img src="assets/tech_grinding_nails.jpg" alt="Professional nail technician at work" loading="lazy" />
+              <div class="showcase-badge">
+                <div class="badge-content">
+                  <span class="badge-text">Walk-ins Welcome</span>
+                  <span class="badge-subtext">Subject to availability</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="wrap">
+          <div class="cta-content">
+            <h2>Ready to Relax?</h2>
+            <p>Book your appointment today and experience the Serenity difference.</p>
+            <div class="cta-actions">
+              <a href="#booking" class="btn btn-primary">Book Appointment</a>
+              <a href="tel:+1-386-555-0123" class="btn btn-ghost">Call (386) 555-0123</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>Serenity Nails & Spa</h3>
+            <p>567 Ocean Shore Boulevard<br>Ormond Beach, FL 32174</p>
+            <p><a href="tel:+1-386-555-0123">(386) 555-0123</a></p>
+          </div>
+          <div class="footer-hours">
+            <h4>Hours</h4>
+            <p>Mon-Fri: 9:30 AM - 7:00 PM<br>
+               Sat: 9:30 AM - 6:00 PM<br>
+               Sun: 11:00 AM - 5:00 PM</p>
+          </div>
+          <div class="footer-services">
+            <h4>Services</h4>
+            <a href="#services">Manicures</a>
+            <a href="#services">Pedicures</a>
+            <a href="#services">Nail Art</a>
+            <a href="#services">Spa Treatments</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> Serenity Nails & Spa — Ormond Beach, FL</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Set default date to tomorrow
+      document.addEventListener('DOMContentLoaded', function() {
+        const dateInput = document.getElementById('appointment-date');
+        if (dateInput) {
+          const tomorrow = new Date();
+          tomorrow.setDate(tomorrow.getDate() + 1);
+          dateInput.value = tomorrow.toISOString().split('T')[0];
+        }
+      });
+    </script>
+  </body>
+</html>

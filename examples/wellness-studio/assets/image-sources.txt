@@ -1,0 +1,53 @@
+WELLNESS STUDIO IMAGE SOURCES & SEARCH GUIDE
+=====================================================
+
+For high-quality wellness studio images (1200x800 or larger), use these proven sources:
+
+**1. UNSPLASH.COM (100% Free, No Attribution Required)**
+   - Visit: https://unsplash.com/s/photos/yoga-studio
+   - Search terms: "yoga studio interior", "wellness studio", "pilates studio", "meditation space"
+   - Additional searches: "studio natural light", "yoga class", "mindful movement"
+
+**2. PEXELS.COM (100% Free, Commercial Use)**
+   - Visit: https://www.pexels.com/search/yoga%20studio/
+   - Search terms: "yoga studio", "pilates class", "meditation practice", "wellness atmosphere"
+   - Additional: "yoga instructor", "mindful movement", "yoga props"
+
+**3. BURST BY SHOPIFY (Creative Commons Zero)**
+   - Visit: https://burst.shopify.com/yoga
+   - All images free for commercial use, no attribution required
+
+**SPECIFIC IMAGE REQUIREMENTS:**
+- Resolution: 1200x800 or larger
+- Format: JPEG (quality 85-90)
+- Lighting: Natural light preferred
+- Style: Clean, minimalist, peaceful
+- Diversity: Inclusive representation
+- Atmosphere: Professional but welcoming
+
+**RECOMMENDED SEARCH TERMS BY IMAGE:**
+1. hero-yoga-studio.jpg → "yoga studio interior natural light"
+2. yoga-class.jpg → "yoga class group people diverse"
+3. pilates-session.jpg → "pilates reformer class equipment"
+4. meditation-practice.jpg → "meditation sitting peaceful space"
+5. light-weights.jpg → "light weights fitness wellness studio"
+6. wellness-atmosphere.jpg → "wellness studio plants natural elements"
+7. instructor-teaching.jpg → "yoga instructor teaching class diverse"
+8. peaceful-interior.jpg → "peaceful studio interior minimalist"
+9. wellness-props.jpg → "yoga mats blocks meditation cushions"
+10. mindful-movement.jpg → "mindful movement yoga gentle exercise"
+
+**DOWNLOAD INSTRUCTIONS:**
+1. Go to Unsplash or Pexels
+2. Search using the terms above
+3. Look for images with good natural lighting and clean composition
+4. Click download and select high resolution (1200x800 minimum)
+5. Rename files to match the list above
+6. Save to this assets directory
+
+**LICENSING REMINDER:**
+All sources listed provide images that are:
+✓ Free for commercial use
+✓ No attribution required (though appreciated)
+✓ High resolution available
+✓ Suitable for business websites
