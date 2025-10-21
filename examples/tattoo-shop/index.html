@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebel Ink Tattoo - Custom Tattoos & Body Art | Ormond Beach, FL</title>
+    <meta name="description" content="Custom tattoo designs and professional body art in Ormond Beach. Walk-ins welcome. Expert artists specializing in traditional, realism, and blackwork tattoos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- SVG Definitions for Effects -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- Noise Filter for Grainy Texture -->
+            <filter id="noise">
+                <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise" seed="2"></feTurbulence>
+                <feColorMatrix in="noise" type="saturate" values="0"></feColorMatrix>
+                <feComponentTransfer result="monoNoise">
+                    <feFuncA type="discrete" tableValues="0.8 0.85 0.9 0.95 1"></feFuncA>
+                </feComponentTransfer>
+                <feComposite in="SourceGraphic" in2="monoNoise" operator="multiply"></feComposite>
+            </filter>
+            
+            <!-- Glitch Effect -->
+            <filter id="glitch">
+                <feOffset in="SourceGraphic" dx="2" dy="0" result="offset1"></feOffset>
+                <feFlood flood-color="#FF2D55" result="flood1"></feFlood>
+                <feComposite in="flood1" in2="offset1" operator="in" result="comp1"></feComposite>
+                
+                <feOffset in="SourceGraphic" dx="-2" dy="0" result="offset2"></feOffset>
+                <feFlood flood-color="#1B1BE0" result="flood2"></feFlood>
+                <feComposite in="flood2" in2="offset2" operator="in" result="comp2"></feComposite>
+                
+                <feMerge>
+                    <feMergeNode in="comp1"></feMergeNode>
+                    <feMergeNode in="comp2"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+            
+            <!-- Sticker Shadow -->
+            <filter id="sticker-shadow">
+                <feOffset in="SourceGraphic" dx="0" dy="6" result="offset"></feOffset>
+                <feFlood flood-color="#111111" result="shadow-color"></feFlood>
+                <feComposite in="shadow-color" in2="offset" operator="in" result="shadow"></feComposite>
+                <feMerge>
+                    <feMergeNode in="shadow"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+        </defs>
+    </svg>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">REBEL INK</span>
+                    <div class="sticker-badge">EST. 2018</div>
+                </div>
+                <nav class="nav">
+                    <a href="#artists" class="nav-link">Artists</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Visit</a>
+                </nav>
+                <div class="header-cta">
+                    <a href="tel:+1-386-555-0123" class="btn-secondary">CALL NOW</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge-container">
+                    <div class="floating-sticker sticker-1">WALK-INS<br>WELCOME</div>
+                    <div class="floating-sticker sticker-2">CUSTOM<br>DESIGNS</div>
+                </div>
+                <h1 class="glitch-text">TATTOOS THAT<br>TELL YOUR STORY</h1>
+                <p class="hero-subtitle">Professional custom tattoo art in the heart of Ormond Beach. From traditional flash to photorealistic portraits—we bring your vision to life.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary-large">BOOK CONSULTATION</a>
+                    <a href="#gallery" class="btn-text">VIEW OUR WORK</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">TATTOOS COMPLETED</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">EXPERT ARTISTS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">YEARS EXPERIENCE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section class="artists" id="artists">
+        <div class="container">
+            <div class="section-header">
+                <h2>MEET THE ARTISTS</h2>
+                <p>Expert tattoo artists specializing in different styles and techniques</p>
+            </div>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="assets/man_tattooing_arm_5.jpg" alt="Mike 'Bones' Rodriguez tattooing a client" />
+                        <div class="specialty-tag">TRADITIONAL</div>
+                    </div>
+                    <h3>MIKE "BONES" RODRIGUEZ</h3>
+                    <p>15+ years specializing in American Traditional, Neo-Traditional, and bold linework. Known for vibrant colors and classic flash designs.</p>
+                    <div class="artist-booking">
+                        <span class="booking-status available">BOOKING OPEN</span>
+                        <a href="https://instagram.com/bones_tattoos" target="_blank" class="instagram-btn">INSTAGRAM</a>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="assets/woman_tattooing_arm.jpg" alt="Sarah 'Ink' Chen working on a detailed piece" />
+                        <div class="specialty-tag">REALISM</div>
+                    </div>
+                    <h3>SARAH "INK" CHEN</h3>
+                    <p>Black & gray realism specialist with a focus on portraits, nature scenes, and photorealistic designs. Precision and detail oriented.</p>
+                    <div class="artist-booking">
+                        <span class="booking-status waitlist">WAITLIST</span>
+                        <a href="https://instagram.com/inkbysarah" target="_blank" class="instagram-btn">INSTAGRAM</a>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="assets/man_tattooing_thigh.jpg" alt="Alex 'Void' Martinez creating geometric blackwork" />
+                        <div class="specialty-tag">BLACKWORK</div>
+                    </div>
+                    <h3>ALEX "VOID" MARTINEZ</h3>
+                    <p>Geometric patterns, blackwork, and dotwork master. Creates stunning mandala designs and intricate line work pieces.</p>
+                    <div class="artist-booking">
+                        <span class="booking-status available">BOOKING OPEN</span>
+                        <a href="https://instagram.com/void_geometric" target="_blank" class="instagram-btn">INSTAGRAM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>RECENT WORK</h2>
+                <p>Fresh ink from our talented artists</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item featured">
+                    <img src="assets/forearm_traditional_ship.jpg" alt="Traditional ship tattoo on forearm" />
+                    <div class="work-overlay">
+                        <div class="work-info">
+                            <span class="work-style">TRADITIONAL</span>
+                            <span class="work-artist">BY BONES</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/back_tattoo_black_dress.jpg" alt="Detailed back tattoo" />
+                    <div class="gallery-tag">REALISM</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/ribs_woman_gaia.jpg" alt="Geometric blackwork on ribs" />
+                    <div class="gallery-tag">BLACKWORK</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/pop_art_flash_tattoo_on_blonde_woman.jpg" alt="Colorful pop art tattoo" />
+                    <div class="gallery-tag">NEO-TRAD</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/forearm_space.jpg" alt="Space-themed linework tattoo" />
+                    <div class="gallery-tag">LINEWORK</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/flash_tatto_leg_man.jpg" alt="Colorful flash tattoo on leg" />
+                    <div class="gallery-tag">COLOR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>WHAT WE DO</h2>
+                <p>Professional tattoo services and aftercare</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/looking_at_stencil.jpg" alt="Custom design consultation" />
+                    </div>
+                    <h3>CUSTOM DESIGNS</h3>
+                    <p>Work directly with our artists to create one-of-a-kind tattoo designs tailored to your vision and style preferences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/laying_stencil.jpg" alt="Walk-in tattoo stencil preparation" />
+                    </div>
+                    <h3>WALK-INS</h3>
+                    <p>Flash tattoos and smaller pieces available for walk-in clients. Check with front desk for artist availability.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/man_wiping_tattoo.jpg" alt="Touch-up and aftercare service" />
+                    </div>
+                    <h3>TOUCH-UPS</h3>
+                    <p>Free touch-ups within 6 months of your original tattoo. Keeping your ink looking fresh and vibrant.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="assets/opening_ink.jpg" alt="Professional tattoo aftercare products" />
+                    </div>
+                    <h3>AFTERCARE</h3>
+                    <p>Complete aftercare guidance and premium healing products to ensure your tattoo heals properly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>REBEL INK TATTOO</h2>
+                    <p>Founded in 2018, Rebel Ink has become Ormond Beach's premier destination for high-quality custom tattoos. Our shop combines old-school tattooing traditions with modern techniques and sterilization standards.</p>
+                    <p>Every artist in our shop is licensed, experienced, and passionate about their craft. We take pride in creating a welcoming environment where clients can feel comfortable bringing their tattoo visions to life.</p>
+                    <div class="credentials">
+                        <div class="credential-badge">FL LICENSED</div>
+                        <div class="credential-badge">HEALTH DEPT CERTIFIED</div>
+                        <div class="credential-badge">SINGLE-USE NEEDLES</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/inside_shop.jpg" alt="Clean and professional tattoo shop interior" />
+                    <div class="overlay-sticker">CLEAN & SAFE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>VISIT THE SHOP</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div>
+                                <div class="contact-label">LOCATION</div>
+                                <div>234 Beach Street<br>Ormond Beach, FL 32174</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div>
+                                <div class="contact-label">PHONE</div>
+                                <div><a href="tel:+1-386-555-0123">(386) 555-0123</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"></div>
+                            <div>
+                                <div class="contact-label">EMAIL</div>
+                                <div><a href="mailto:owner@example.com">ink@rebeltattooshop.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hours">
+                        <h3>SHOP HOURS</h3>
+                        <div class="hours-grid">
+                            <div class="hours-row">
+                                <span>MON - THU</span>
+                                <span>12PM - 9PM</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>FRI - SAT</span>
+                                <span>12PM - 11PM</span>
+                            </div>
+                            <div class="hours-row">
+                                <span>SUNDAY</span>
+                                <span>12PM - 7PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <div class="map-icon">📍</div>
+                        <div class="map-text">
+                            <div>REBEL INK TATTOO</div>
+                            <div>234 Beach Street, Ormond Beach</div>
+                        </div>
+                        <a href="https://www.openstreetmap.org/search?query=234%20Beach%20Street%20Ormond%20Beach%20FL" target="_blank" class="btn-map">GET DIRECTIONS</a>
+                    </div>
+                    <div class="location-sticker">EASY PARKING</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">REBEL INK</span>
+                    </div>
+                    <p>Professional custom tattoos and body art in Ormond Beach, Florida. Walk-ins welcome.</p>
+                    <div class="footer-warning">
+                        <strong>18+ ONLY • VALID ID REQUIRED</strong>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li><a href="#artists">Custom Tattoos</a></li>
+                            <li><a href="#gallery">Flash Designs</a></li>
+                            <li><a href="#services">Touch-ups</a></li>
+                            <li><a href="#services">Aftercare</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>ARTISTS</h4>
+                        <ul>
+                            <li><a href="#artists">Mike "Bones"</a></li>
+                            <li><a href="#artists">Sarah "Ink"</a></li>
+                            <li><a href="#artists">Alex "Void"</a></li>
+                            <li><a href="#contact">Book Session</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>INFO</h4>
+                        <ul>
+                            <li>234 Beach Street</li>
+                            <li>Ormond Beach, FL 32174</li>
+                            <li><a href="tel:+1-386-555-0123">(386) 555-0123</a></li>
+                            <li><a href="mailto:owner@example.com">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div>&copy; 2024 Rebel Ink Tattoo. All rights reserved.</div>
+                    <div class="footer-credentials">FL Licensed • Health Dept Certified</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
