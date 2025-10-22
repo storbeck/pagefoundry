@@ -8,6 +8,17 @@ Goal
 Recent context (2025‑10)
 - A luxury Realtor example now lives at `examples/realtor/` with a non‑overlay hero, editorial/light theme, and clear service tiles. Use this example as a pattern for future premium verticals.
 
+Google Analytics - this tag must be added to every page for tracking.
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3T2F6KC52G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3T2F6KC52G');
+</script>
+
 Realtor example — key implementation notes
 - Brand & typography
   - Working brand placeholder: “Sable & Shore”. Keep it easy to swap.
